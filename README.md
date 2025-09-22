@@ -2,7 +2,7 @@
 
 ### 공통
 
-- [ ]  완성된 `Day 35` 폴더를 활용하여 `Day 36` 폴더를 완성해 주세요.
+- [ ]  완성된 `Day 34` 폴더를 활용하여 `Day 35` 폴더를 완성해 주세요.
 - [ ]  이미지 업로드를 위해 `apollo-upload-client` 라이브러리를 설치하고, `commons/settings/apollo-setting.tsx` 파일에 Apollo 클라이언트 설정을 완료해 주세요.
 
 ### 게시글 등록
