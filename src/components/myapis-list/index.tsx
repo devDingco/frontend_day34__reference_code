@@ -1,10 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { Avatar, List, FloatButton } from "antd";
+import { useEffect } from "react";
+import { Avatar, List, FloatButton, Typography } from "antd";
 import styles from "./styles.module.css";
 import useMyAppList from "./hook";
 import { useRouter } from "next/navigation";
+
+const { Title } = Typography;
 
 export default function MyApiList() {
   const router = useRouter();
@@ -16,6 +18,13 @@ export default function MyApiList() {
 
   return (
     <div className={styles.listBody}>
+      {/* 헤더 영역 - 제목 */}
+      <div className={styles.header}>
+        <Title level={2} className={styles.headerTitle}>
+          내가 만든 게시글 목록
+        </Title>
+      </div>
+      {/* 게시글 목록 */}
       <List
         className="demo-loadmore-list"
         itemLayout="horizontal"
@@ -52,6 +61,8 @@ export default function MyApiList() {
           </List.Item>
         )}
       />
+      
+      {/* 플로팅 버튼 (상단 버튼과 중복되므로 주석 처리) */}
       <FloatButton onClick={() => router.push("/myapis/new")} />
     </div>
   );
