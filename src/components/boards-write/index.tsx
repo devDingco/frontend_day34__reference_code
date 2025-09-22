@@ -6,10 +6,11 @@ import { useBoardWrite } from "./hook";
 import { IBoardWriteProps } from "./types";
 import { Modal } from "antd";
 import DaumPostcodeEmbed from "react-daum-postcode";
+import addImage from "@assets/add_image.png";
 
 const IMAGE_SRC = {
   addImage: {
-    src: require("@assets/add_image.png"),
+    src: addImage,
     alt: "사진추가이미지",
   },
 };
